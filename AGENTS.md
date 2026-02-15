@@ -2,30 +2,26 @@
 
 This is a VLTRA business project for research, writing, and strategic work.
 
-## Available Commands
+## Knowledge Base
 
-| Command     | Description                                                              |
-| ----------- | ------------------------------------------------------------------------ |
-| `/onboard`  | Set up business context through conversation. Creates `.context/` files. |
-| `/research` | Deep research on any topic with sources and insights.                    |
+_Run `/onboard` to populate the knowledge base through a conversational interview._
+
+| File                 | Description                     |
+| -------------------- | ------------------------------- |
+| `about/company.md`   | Identity, industry, story       |
+| `about/products.md`  | Offerings, differentiators      |
+| `about/customers.md` | Audience, personas, pain points |
+| `about/voice.md`     | Tone, terminology, glossary     |
+| `about/goals.md`     | Current priorities, challenges  |
 
 ## How It Works
 
-1. **Run `/onboard` first** - Teaches the AI about your business through a conversational interview
-2. **Use other commands** - They automatically read `.context/` for better, more relevant output
+1. **Run `/onboard` first** - Teaches the AI about your business through conversation
+2. **Use other commands** - They read `AGENTS.md` and follow pointers for context
 3. **Re-run `/onboard` anytime** - Update context as your business evolves
+4. **Run `/tidy`** - Audit and reorganize the knowledge base
 
-## Project Structure
-
-```
-.context/           # Business context (created by /onboard)
-├── company.md      # Identity, industry, story
-├── products.md     # Offerings, differentiators
-├── customers.md    # Audience, personas, pain points
-├── competitors.md  # Landscape, positioning
-├── voice.md        # Tone, terminology
-└── goals.md        # Priorities, challenges
-```
+`AGENTS.md` is the stable entry point — all skills navigate through its index. `about/` is the default starting structure. As the project grows, files can be reorganized into whatever fits. The index always reflects the current layout.
 
 ## Git Workflow
 
